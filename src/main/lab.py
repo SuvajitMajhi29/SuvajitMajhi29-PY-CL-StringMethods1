@@ -6,7 +6,7 @@ def get_string_length(s):
     :param s: The string to be manipulated.
     :return: The length of the string.
     """
-    return 0
+    return len(s)
 
 def get_character_at_index(s, n):
     """
@@ -16,7 +16,7 @@ def get_character_at_index(s, n):
     :param n: An index of the string.
     :return: The character of the string at the specified index.
     """
-    return ''
+    return s[n]
 
 def get_index_given_character(s, c):
     """
@@ -29,7 +29,7 @@ def get_index_given_character(s, c):
     """
     if c == '':
         return -1
-    return 0
+    return s.find(c)
 
 def string_slicing(s, start, end):
     """
@@ -40,7 +40,8 @@ def string_slicing(s, start, end):
     :param end: The ending index of the slice.
     :return: The sliced substring.
     """
-    return ""  # Adjust end index to be inclusive
+    return s[start:end+1]
+      # Adjust end index to be inclusive
 
 
 
@@ -63,7 +64,7 @@ def concatenate_strings(string1, string2):
         string2: "morning"
         return: "Good morning"
     """
-    return ""
+    return string1+" "+string2
 
 def repeat_string(s, times):
     """
@@ -73,7 +74,7 @@ def repeat_string(s, times):
     :param times: The number of times to repeat the string.
     :return: The repeated string.
     """
-    return ""
+    return s* times
 
 def string_length(s):
     """
@@ -82,7 +83,7 @@ def string_length(s):
     :param s: The string to get the length of.
     :return: The length of the string.
     """
-    return 0
+    return len(s)
 
 def convert_to_uppercase(s):
     """
@@ -91,7 +92,7 @@ def convert_to_uppercase(s):
     :param s: The string to be converted.
     :return: The uppercase version of the string.
     """
-    return ""
+    return s.upper()
 
 def convert_to_lowercase(s):
     """
@@ -100,4 +101,4 @@ def convert_to_lowercase(s):
     :param s: The string to be converted.
     :return: The lowercase version of the string.
     """
-    return ""
+    return s.lower()
